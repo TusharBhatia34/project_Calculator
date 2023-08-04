@@ -7,5 +7,5 @@ sealed interface CalculatorActions {
     object Decimal : CalculatorActions
     data class Operation(val calculatorOperation: CalculatorOperation) : CalculatorActions
     data class Numbers(val number: Int) : CalculatorActions
-    object Percentage : CalculatorActions
+    object Percentage : CalculatorAction
 }
