@@ -15,9 +15,6 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun CustomButton(modifier: Modifier, textColor: Color, text:String, onClick :()-> Unit) {
     Box(contentAlignment = Alignment.Center,modifier = Modifier
-        .aspectRatio(
-            1.5f
-        )
         .clip(CircleShape)
         .clickable { onClick() }
         .then(modifier)
